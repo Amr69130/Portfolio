@@ -4,6 +4,21 @@ body {
   color: black;
   background-color: rgb(0, 130, 130);
   height: 100vh;
+  .monitor-img {
+    margin: 5px;
+    width: 60px;
+    height: auto;
+  }
+}
+
+#test {
+  text-align: center;
+  .pix_pic {
+    width: 300px;
+    height: auto;
+    transform: translateY(100%); /* Position initiale en bas */
+    animation: slideUp 1.5s ease-out forwards; /* Lancer l'animation */
+  }
 }
 
 .welcome-screen {
@@ -13,12 +28,6 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
-}
-
-.monitor-img {
-  width: 100px;
-  height: auto;
-  margin: 15px 0;
 }
 
 .content {
