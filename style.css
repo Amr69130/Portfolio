@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", sans-serif;
+  color: black;
+  background-color: rgb(0, 130, 130);
+  height: 100vh;
+}
+
+.welcome-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.monitor-img {
+  width: 100px;
+  height: auto;
+  margin: 15px 0;
+}
+
+.content {
+  background-color: rgb(255, 255, 204);
+  border: 2px solid rgb(128, 128, 128);
+  width: 400px;
+  padding: 20px;
+  box-shadow: 4px 4px 0 rgb(0, 76, 76);
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.button {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(64, 64, 64);
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.footer {
+  background-color: rgb(195, 195, 195);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.start-button {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(64, 64, 64);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.clock {
+  font-size: 14px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
