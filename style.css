@@ -1,28 +1,58 @@
+/* Styles généraux */
 body {
   margin: 0;
   font-family: "Press Start 2P", sans-serif;
   color: black;
   background-color: rgb(0, 130, 130);
   height: 100vh;
-  .monitor-img {
-    margin: 5px;
-    width: 60px;
-    height: auto;
+  overflow: hidden; /* Pas de défilement */
+}
+
+/* Conteneur pour le moniteur et le titre */
+#presentation {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 20px;
+}
+
+/* Image du moniteur */
+.monitor-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+}
+
+/* Titre aligné */
+#presentation h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Photo Linkedin */
+.pix_pic {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%) translateY(-100%);
+  animation: slideDown 15s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  to {
+    transform: translateX(-50%) translateY(100px); /* Aligné avec dialog box */
   }
 }
 
-#test {
-  text-align: center;
-  .pix_pic {
-    width: 300px;
-    height: auto;
-    transform: translateY(100%); /* Position initiale en bas */
-    animation: slideUp 1.5s ease-out forwards; /* Lancer l'animation */
-  }
-}
-
+/* Fenêtre Windows */
 .welcome-screen {
-  height: 100%;
+  height: calc(100% - 80px); /* Place la fenêtre correctement */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,61 +62,82 @@ body {
 
 .content {
   background-color: rgb(255, 255, 204);
-  border: 2px solid rgb(128, 128, 128);
   width: 400px;
   padding: 20px;
-  box-shadow: 4px 4px 0 rgb(0, 76, 76);
   text-align: center;
+  border: 2px solid rgb(192, 192, 192);
+  box-shadow: inset -2px -2px 0 rgb(255, 255, 255),
+    inset 2px 2px 0 rgb(64, 64, 64), -4px -4px 0 rgb(255, 255, 255),
+    4px 4px 0 rgb(64, 64, 64);
+  position: relative;
 }
 
-.content h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.content::before {
+  content: "Welcome to my Portfolio";
+  display: block;
+  width: calc(100% - 20px);
+  background-color: rgb(192, 192, 255);
+  color: black;
   font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 128);
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  box-shadow: inset -2px -2px 0 rgb(255, 255, 255),
+    inset 2px 2px 0 rgb(64, 64, 64);
 }
 
-.content p {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.button {
+.close-button {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
   background-color: rgb(245, 245, 245);
-  border: 2px solid rgb(64, 64, 64);
-  padding: 8px 15px;
-  font-size: 14px;
+  border: 2px solid rgb(128, 128, 128);
+  box-shadow: inset -2px -2px 0 rgb(255, 255, 255),
+    inset 2px 2px 0 rgb(64, 64, 64);
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
   cursor: pointer;
-  margin-top: 20px;
+  color: black;
 }
 
-.button:hover {
+.close-button:hover {
   background-color: rgb(200, 200, 200);
 }
 
+/* Footer */
 .footer {
   background-color: rgb(195, 195, 195);
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  position: fixed;
-  bottom: 0;
-  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 20px; /* Placé juste au-dessus du bas */
+  width: 100%;
+  /* padding: 0 10px; */
 }
 
+/* Bouton Start */
 .start-button {
   background-color: rgb(245, 245, 245);
   border: 2px solid rgb(64, 64, 64);
-  padding: 5px 10px;
-  cursor: pointer;
+  padding: 5px 15px;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .start-button:hover {
   background-color: rgb(200, 200, 200);
 }
 
+/* Horloge */
 .clock {
   font-size: 14px;
   color: black;
