@@ -1,16 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Press Start 2P", sans-serif;
+  font-size: smaller;
   color: black;
   background-color: rgb(0, 130, 130);
   height: 100vh;
   overflow: hidden;
+  ul {
+    list-style: none;
+  }
 }
 
 #presentation {
   display: flex;
   align-items: center;
   margin: 20px 0 0 20px;
+  ul {
+    list-style: none;
+  }
 }
 
 .monitor-img {
@@ -21,9 +29,41 @@ body {
   cursor: pointer;
 }
 
+.notepad-im {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.document-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.network-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.mail-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
 #presentation h1 {
   font-size: 24px;
-  margin: 0;
+  margin: 10px;
   font-weight: bold;
 }
 
