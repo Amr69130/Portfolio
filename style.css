@@ -22,15 +22,15 @@ body {
 }
 
 .monitor-img {
-  width: 50px;
+  width: 45px;
   height: auto;
   margin-right: 10px;
   display: block;
   cursor: pointer;
 }
 
-.notepad-im {
-  width: 50px;
+.notepad-img {
+  width: 45px;
   height: auto;
   margin-right: 10px;
   display: block;
@@ -38,23 +38,33 @@ body {
 }
 
 .document-img {
-  width: 50px;
+  width: 70px;
   height: auto;
   margin-right: 10px;
+  margin-left: -20px;
   display: block;
   cursor: pointer;
 }
 
 .network-img {
-  width: 50px;
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: -20px;
+  display: block;
+  cursor: pointer;
+}
+
+.mail-img {
+  width: 45px;
   height: auto;
   margin-right: 10px;
   display: block;
   cursor: pointer;
 }
 
-.mail-img {
-  width: 50px;
+.media_player-img {
+  width: 45px;
   height: auto;
   margin-right: 10px;
   display: block;
@@ -104,7 +114,9 @@ body {
   box-shadow: inset -2px -2px 0 rgb(255, 255, 255),
     inset 2px 2px 0 rgb(64, 64, 64), -4px -4px 0 rgb(255, 255, 255),
     4px 4px 0 rgb(64, 64, 64);
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .close-button {
