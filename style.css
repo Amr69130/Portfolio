@@ -71,6 +71,14 @@ body {
   cursor: pointer;
 }
 
+.paint-img {
+  width: 45px;
+  height: auto;
+  margin-right: 10px;
+  display: block;
+  cursor: pointer;
+}
+
 #presentation h1 {
   font-size: 24px;
   margin: 10px;
