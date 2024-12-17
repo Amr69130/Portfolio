@@ -18,6 +18,7 @@ body {
   height: auto;
   margin-right: 10px;
   display: block;
+  cursor: pointer;
 }
 
 #presentation h1 {
@@ -106,7 +107,7 @@ body {
 
 .footer {
   background-color: rgb(195, 195, 195);
-  height: 40px;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,12 +117,18 @@ body {
 }
 
 .start-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background-color: rgb(245, 245, 245);
   border: 2px solid rgb(64, 64, 64);
-  padding: 5px 15px;
+  padding: 5px 5px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+.start-button img {
+  height: 25px;
 }
 
 .start-button:hover {
@@ -132,4 +139,5 @@ body {
   font-size: 14px;
   color: black;
   font-family: "Courier New", Courier, monospace;
+  margin-right: 15px;
 }
