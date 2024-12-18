@@ -1,9 +1,9 @@
 
 const closeButton = document.getElementById("closeButton");
-const dialogBox = document.getElementById("dialogBox");
+const welcomeWrapper = document.getElementById("welcomeWrapper");
 
 closeButton.addEventListener("click", () => {
-  dialogBox.style.display = "none";
+  welcomeWrapper.style.display = "none";
 });
 
 
