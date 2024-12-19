@@ -4,8 +4,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Press Start 2P", sans-serif;
   color: black;
   background-color: rgb(0, 130, 130);
@@ -15,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     img {
-      width: 10vh;
+      width: 12vh;
       height: auto;
       cursor: pointer;
     }

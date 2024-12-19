@@ -7,5 +7,26 @@ a:visited {
   text-decoration: none;
 }
 body {
-  background-image: url(assets/img-25/coding.jpg);
+  font-family: "Playwrite US Modern", serif;
+  background-image: url(assets/img-25/v627-aew-09-technologybackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+  header {
+    display: flex;
+    justify-content: flex-end;
+    h1 {
+      margin: 5%;
+    }
+    img {
+      width: 12vh;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+  main {
+  }
+  footer {
+  }
 }
