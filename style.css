@@ -51,7 +51,7 @@ body {
       #pix-pic {
         text-align: center;
         img {
-          width: 30%;
+          width: 25%;
           height: auto;
           animation: slideDown 5s ease-in-out forwards;
         }
@@ -61,6 +61,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
         #welcome {
           display: inline-block;
           text-align: center;
