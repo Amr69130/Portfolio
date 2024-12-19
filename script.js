@@ -4,6 +4,7 @@ const welcomeWrapper = document.getElementById("welcomeWrapper");
 
 closeButton.addEventListener("click", () => {
   welcomeWrapper.style.display = "none";
+  welcomeWrapperEmpty.style.display = "inline-block"
 });
 
 
