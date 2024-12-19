@@ -84,50 +84,94 @@ body {
         display: none;
         height: 25%;
       }
+
+      #error {
+        width: 300px;
+        background-color: rgb(235, 232, 215);
+        border: 5px solid rgb(76, 98, 171);
+
+        font-family: "MS Sans Serif", Arial, sans-serif;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+      }
+
+      #error h1 {
+        background-color: rgb(76, 98, 171);
+        color: white;
+
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      #error p {
+        color: black;
+        padding: 10px;
+
+        margin: 10px 0;
+        font-size: 14px;
+        border-radius: 5px;
+        word-wrap: break-word;
+      }
+
+      #error button {
+        background-color: 76, 98, 171;
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        border: none;
+
+        cursor: pointer;
+        font-weight: bold;
+        display: block;
+        margin: 10px auto;
+      }
     }
-  }
-  footer {
-    background-color: rgb(182, 179, 179);
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    .start-button {
+    footer {
+      background-color: rgb(182, 179, 179);
+      height: 5%;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 0.3rem;
-      background-color: rgb(245, 245, 245);
-      border: 0.2rem solid rgb(64, 64, 64);
-      padding: 0.3rem 0.5rem;
-      font-size: 0.8rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .start-button img {
-      height: 80%;
-      max-height: 25px;
-    }
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      .start-button {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        background-color: rgb(245, 245, 245);
+        border: 0.2rem solid rgb(64, 64, 64);
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .start-button img {
+        height: 80%;
+        max-height: 25px;
+      }
 
-    .start-button:hover {
-      background-color: rgb(200, 200, 200);
-    }
+      .start-button:hover {
+        background-color: rgb(200, 200, 200);
+      }
 
-    .clock {
-      font-size: 0.8rem;
-      color: black;
-      font-family: "Courier New", Courier, monospace;
-      margin-right: 2%;
+      .clock {
+        font-size: 0.8rem;
+        color: black;
+        font-family: "Courier New", Courier, monospace;
+        margin-right: 2%;
+      }
     }
   }
-}
-@keyframes slideDown {
-  from {
-    transform: translateY(-150%);
-  }
-  to {
-    transform: translateY(35%);
+  @keyframes slideDown {
+    from {
+      transform: translateY(-150%);
+    }
+    to {
+      transform: translateY(35%);
+    }
   }
 }
