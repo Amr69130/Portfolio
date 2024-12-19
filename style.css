@@ -33,8 +33,10 @@ body {
     #icons_and_links {
       display: flex;
       flex-direction: column;
+      width: 15%;
+
       .icon {
-        max-width: 05%;
+        max-width: 20%;
         height: auto;
         margin-bottom: 0.5rem;
         cursor: pointer;
@@ -44,6 +46,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 80%;
       #pix-pic {
         text-align: center;
         img {
@@ -51,6 +54,7 @@ body {
           height: auto;
         }
       }
+
       #welcomeWrapper {
         display: flex;
         justify-content: center;
