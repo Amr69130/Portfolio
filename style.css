@@ -85,11 +85,12 @@ body {
         height: 25%;
       }
 
-      #error {
+      #errorBox {
         width: 300px;
+        display: none;
         background-color: rgb(235, 232, 215);
         border: 5px solid rgb(76, 98, 171);
-        display: inline-block;
+
         font-family: "MS Sans Serif", Arial, sans-serif;
         position: fixed;
         top: 30%;
@@ -98,7 +99,7 @@ body {
         color: black;
       }
 
-      #error h1 {
+      #errorBox h1 {
         background-color: rgb(76, 98, 171);
         color: white;
 
@@ -107,7 +108,7 @@ body {
         font-weight: bold;
       }
 
-      #error p {
+      #errorBox p {
         color: black;
         padding: 10px;
 
@@ -117,7 +118,7 @@ body {
         word-wrap: break-word;
       }
 
-      #error button {
+      #errorBox button {
         background-color: 76, 98, 171;
         color: rgb(0, 0, 0);
         padding: 5px 10px;

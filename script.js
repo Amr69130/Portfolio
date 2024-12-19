@@ -5,7 +5,29 @@ const welcomeWrapper = document.getElementById("welcomeWrapper");
 closeButton.addEventListener("click", () => {
   welcomeWrapper.style.display = "none";
   welcomeWrapperEmpty.style.display = "inline-block"
+  
 });
+
+
+
+
+setTimeout(() => {
+  errorBox.style.display = "block";
+}, 15000);
+
+const closeButtonError = document.getElementById("closeButtonError");
+const errorBox = document.getElementById("errorBox");
+
+closeButtonError.addEventListener("click", () => {
+  errorBox.style.display = "none";
+  setTimeout(() => {
+    errorBox.style.display = "block";
+  }, 3000);
+  
+});
+
+
+
 
 
 function updateClock() {
