@@ -53,6 +53,7 @@ body {
         img {
           width: 30%;
           height: auto;
+          animation: slideDown 5s ease-in-out forwards;
         }
       }
 
@@ -112,5 +113,13 @@ body {
       font-family: "Courier New", Courier, monospace;
       margin-right: 2%;
     }
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(35%);
   }
 }
