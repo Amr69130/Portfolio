@@ -38,3 +38,20 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+
+const carousel = document.querySelector(".carousel");
+
+let isPaused = false;
+
+// Pause l'animation au survol
+carousel.addEventListener("mouseover", () => {
+  carousel.style.animationPlayState = "paused";
+  isPaused = true;
+});
+
+// Relance l'animation en sortant
+carousel.addEventListener("mouseout", () => {
+  carousel.style.animationPlayState = "running";
+  isPaused = false;
+});

@@ -26,7 +26,36 @@ body {
     }
   }
   main {
+    display: flex;
+    margin: 0;
+    img {
+      width: 40%;
+      opacity: 30%;
+    }
   }
   footer {
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 10s linear infinite;
+    width: max-content;
+  }
+
+  .carousel img {
+    height: 50px;
+    flex-shrink: 0;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
