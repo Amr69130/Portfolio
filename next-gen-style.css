@@ -1,65 +1,54 @@
-/* * {
-  margin: 0;
-  padding: 0;
+::selection {
+  background-color: rgba(92, 49, 255, 0.99);
+  color: #ffffff;
+  text-shadow: none;
 }
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
+
 body {
-  font-family: "Playwrite US Modern", serif;
-  background-image: url(assets/img-25/v627-aew-09-technologybackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-size: 14px;
+}
 
-  color: white;
-  header {
-    display: flex;
-    justify-content: flex-end;
-    h1 {
-      margin: 5%;
-    }
-    img {
-      width: 12vh;
-      height: auto;
-      cursor: pointer;
-    }
-  }
-  main {
-    display: flex;
-    margin: 0;
-    img {
-      width: 40%;
-      opacity: 30%;
-    }
-  }
-  footer {
-    padding: 20px 0;
-    overflow: hidden;
-    position: relative;
-  }
+.container.is--hero {
+  min-height: auto;
+  height: 100vh;
+  max-height: 1000px;
+}
 
-  .carousel {
-    display: flex;
-    gap: 20px;
-    animation: scroll 10s linear infinite;
-    width: max-content;
-  }
+.hero__icon,
+.hero__card-text,
+.hero__gradient {
+  pointer-events: none;
+}
 
-  .carousel img {
-    height: 50px;
-    flex-shrink: 0;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-} */
+.hero__card {
+  backdrop-filter: blur(2em);
+  -webkit-backdrop-filter: blur(2em);
+}
 
-img {
-  width: 25px;
+.hero__card-content {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.main-content {
+  z-index: 9999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+  background: transparent;
+}
+
+.noise {
+  z-index: 9999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.05;
 }
