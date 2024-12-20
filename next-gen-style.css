@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -58,4 +58,8 @@ body {
       transform: translateX(-100%);
     }
   }
+} */
+
+img {
+  width: 25px;
 }
