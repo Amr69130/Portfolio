@@ -179,14 +179,15 @@ body {
   main {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
   }
   ul {
+    margin: 2vh auto; /* Ajout de auto pour centrer horizontalement */
+    padding-left: 50%;
+    gap: 2vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-content: center;
-    width: 90%;
-    margin: 2vh;
+    justify-content: center; /* Assure un centrage dans la grille */
+    align-items: center; /* Optionnel : centre verticalement chaque item */
   }
 }
 
