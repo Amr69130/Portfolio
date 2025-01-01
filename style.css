@@ -175,6 +175,21 @@ body {
     transform: translateY(20%);
   }
 }
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    width: 90%;
+    margin: 2vh;
+  }
+}
+
 footer {
   background-color: rgb(182, 179, 179);
   height: 5%;
