@@ -175,6 +175,22 @@ body {
     transform: translateY(20%);
   }
 }
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  ul {
+    margin: 2vh auto; /* Ajout de auto pour centrer horizontalement */
+    padding-left: 50%;
+    gap: 2vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Assure un centrage dans la grille */
+    align-items: center; /* Optionnel : centre verticalement chaque item */
+  }
+}
+
 footer {
   background-color: rgb(182, 179, 179);
   height: 5%;
